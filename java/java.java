@@ -111,24 +111,39 @@
 //             System.out.println();
 //         }
 //     }
-// }
-import java.util.Scanner;
-public class java {
-    public static void main(String[] args) {
-    Scanner g3 = new Scanner(System.in);
+// // }
+// import java.util.Scanner;
+// public class java {
+//     public static void main(String[] args) {
+//     Scanner g3 = new Scanner(System.in);
 
-    int x =g3.nextInt();
-    String S= new String("XYZ");
-    String S1=g3.next();
-    g3.nextLine();
-    String S2=g3.nextLine();
-        System.out.println("output");
+//     int x =g3.nextInt();
+//     String S= new String("XYZ");
+//     String S1=g3.next();
+//     g3.nextLine();
+//     String S2=g3.nextLine();
+//         System.out.println("output");
         
-        System.out.println(x);
-        System.out.println(S);
-        System.out.println(S1);
-        System.out.println(S2);
+//         System.out.println(x);
+//         System.out.println(S);
+//         System.out.println(S1);
+//         System.out.println(S2);
 
+//     }
+// }
+
+public class java{
+    public static void main(String[] args) {
+//         String S1 = "NAMAN";
+//         String S2 ="";
+
+    //  for (int i = 5-1;i>=0;i--){
+    //             S2 += S1.charAt(i);
+    //         }
+    //         if (S1.equals(rev)) {
+    //             System.out.println("Palindrome String");
+    //         } else {
+    //             System.out.println("Not a Palindrome String");
+    //         }        
     }
 }
-
