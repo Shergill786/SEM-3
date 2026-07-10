@@ -1,4 +1,5 @@
 
+
 //     public static void main(String[] args) {
 
         // int age = 18;
@@ -132,8 +133,8 @@
 //     }
 // }
 
-public class java{
-    public static void main(String[] args) {
+// public class java{
+//     public static void main(String[] args) {
 //         String S1 = "NAMAN";
 //         String S2 ="";
 
@@ -146,11 +147,84 @@ public class java{
     //             System.out.println("Not a Palindrome String");
     //         }        
  
-        int[] arr = {1, 2, 3, 4, 5};
-
-        for (int i = arr.length - 1; i >= 0; i--) {
-            System.out.print(arr[i] + " ");
-        }
-    }
-}
  
+//     }
+// }
+
+
+// import java.util.Scanner
+// public class java{
+//     public static void main(String arg[]){
+//         Scanner sc = new Scanner(System.in);
+//         int age = sc.nextInt();
+//         System.out.print("output"+age);
+//     }
+// }
+
+// import java.util.*;
+
+// public class rought {
+//     public static void main(String arg[]) {
+//         Scanner sc = new Scanner(System.in);
+
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         for (int i = 0; i < n; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         int t = sc.nextInt();
+        // int i;
+        // for (i = 0; i < n; i++) {
+        //     if (t == arr[i]) {
+        //         System.out.println(i);
+        //         break;
+        //     }
+        // }
+        // if (i == n) {
+        //     System.out.println(-1);
+        
+//     }
+// }
+
+// import java.util.*;
+
+// public class rought {
+
+//     // Function to search an element
+//     public static int search(int arr[], int n, int t) {
+//         for (int i = 0; i < n; i++) {
+//             if (arr[i] == t) {
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     }
+
+//     public static void main(String arg[]) {
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         for (int i = 0; i < n; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         int t = sc.nextInt();
+//         int result = search(arr, n, t);
+
+//         if (result != -1) {
+//             System.out.println(result);
+//         } else {
+//             System.out.println(-1);
+//         }
+        //delete 
+
+        // int p =3;
+        // for (int i=p;i<n-1;i++){
+        //     arr[i]=arr[i+1];
+
+        // }
+        // for (int i=p;i<n-1;i++){
+        //     System.err.println(arr[i]+" ");
+
+//     }
+// }
+
