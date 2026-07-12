@@ -1,18 +1,7 @@
-public class java {
-    public static void main(String[] args) {
-    Scanner g3 = new Scanner(System.in);
+ for(int i=0;i<a;i++){
+        for(int j=0;j<i;j++){
+            System.err.print(" *");
+        }
+    System.err.println(" ");
 
-    int x =g3.nextInt();
-    String S= new String("XYZ");
-    String S1=g3.next();
-    g3.nextLine();
-    String S2=g3.nextLine();
-        System.out.println("output");
-        
-        System.out.println(x);
-        System.out.println(S);
-        System.out.println(S1);
-        System.out.println(S2);
-
-    }
-}
+    } 

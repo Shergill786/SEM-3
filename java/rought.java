@@ -1,64 +1,67 @@
+import java.util.*;
 public class rought{
     public static void main(String[] args) {
-    // int i = 100;
+        Scanner sc= new Scanner(System.in);
+        // System.err.println("input");
+        // int a=sc.nextInt();
+        // int b=sc.nextInt();
+    //     if (a>18){
+    //         System.err.println("Adult");
+    //     }
+    //     else{
+    //         System.err.println("not");
+    //     }
+    
+    // if(a%2==0){
+    //     System.err.println("even");
+    // }
+    // else{
+    //     System.err.println("odd");
+    // }
 
-    // // Automatic type conversion
-    // // Integer to long type
-    // long l= i;
+    // if (a==b){
+    //     System.err.println("equal");
+    // }
+    // else if(a>b){
+    //         System.err.println("a greater");
+    //     }
+    //     else{
+    //         System.err.println("b greater");
+    // }
 
-    // // Automatic type conversion
-    // // long to float type
-    // float f = l;    
+    // switch(a){
+    //     case 1:System.err.println("hello");
+    //     break;
+    //     case 2:System.err.println("bye");
+    //     break;
+    // }
+int a = 6;
+    // for(int i=0;i<a;i++){
+    //     for(int j=0;j<i;j++){
+    //         System.err.print(" *");
+    //     }
+    // System.err.println(" ");
 
-    // // Print and display commands
-    // System.out.println("Int value " + i);
-    // System.out.println("Long value " + l);
-    // System.out.println("Float value " + f);
+    // } 
 
+    // for (int i=a-1;i>0;i--){
+    //     for(int j=0;j<i;j++){
+    //         System.err.print(" *");
+    //     }
+    //     System.err.println("");
+    // }
 
-    // // Double datatype
-    // double d = 100.04;
-
-    // // Explicit type casting by forcefully getting
-    // // data from long datatype to integer type
-    // long l = (long)d;
-
-    // // Explicit type casting
-    // int i = (int)l;
-
-    // // Print statements
-    // System.out.println("Double value " + d);
-
-    // // While printing we will see that
-    // // fractional part lost
-    // System.out.println("Long value " + l);
-
-    // // While printing we will see that
-    // // fractional part lost
-    // System.out.println("Int value " + i);
-
-    // //Declaring byte variable
-        //  byte b;
-
-        // // Declaring and initializing integer and double
-        // int i = 257;
-        // double d = 323.142;
-
-        // // Display message
-        // System.out.println("Conversion of int to byte.");
-
-        // // i % 256
-        // b = (byte)i;
-
-        // // Print commands
-        // System.out.println("i = " + i + " b = " + b);
-        // System.out.println(
-        //     "\nConversion of double to byte.");
-
-        // // d % 256
-        // b = (byte)d;
-
-        // // Print commands
-        // System.out.println("d = " + d + " b= " + b);
+    for(int i=1;i<=a;i++){
+        for(int j=1;j<=a;j++){
+            if (i==1 || i==a || j==1 || j==a){
+            System.err.print("*");
+            }
+            else {
+                System.err.print(" ");
+            }
+        }
+        System.err.println("");
+    }
+    }
 }
-}
+    
