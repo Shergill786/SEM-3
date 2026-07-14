@@ -1,67 +1,47 @@
-import java.util.*;
-public class rought{
-    public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        // System.err.println("input");
-        // int a=sc.nextInt();
-        // int b=sc.nextInt();
-    //     if (a>18){
-    //         System.err.println("Adult");
-    //     }
-    //     else{
-    //         System.err.println("not");
-    //     }
-    
-    // if(a%2==0){
-    //     System.err.println("even");
-    // }
-    // else{
-    //     System.err.println("odd");
-    // }
+public class rought {
 
-    // if (a==b){
-    //     System.err.println("equal");
-    // }
-    // else if(a>b){
-    //         System.err.println("a greater");
-    //     }
-    //     else{
-    //         System.err.println("b greater");
-    // }
+    static class G3 {
 
-    // switch(a){
-    //     case 1:System.err.println("hello");
-    //     break;
-    //     case 2:System.err.println("bye");
-    //     break;
-    // }
-int a = 6;
-    // for(int i=0;i<a;i++){
-    //     for(int j=0;j<i;j++){
-    //         System.err.print(" *");
-    //     }
-    // System.err.println(" ");
+        String name;
+        int roll;
 
-    // } 
-
-    // for (int i=a-1;i>0;i--){
-    //     for(int j=0;j<i;j++){
-    //         System.err.print(" *");
-    //     }
-    //     System.err.println("");
-    // }
-
-    for(int i=1;i<=a;i++){
-        for(int j=1;j<=a;j++){
-            if (i==1 || i==a || j==1 || j==a){
-            System.err.print("*");
-            }
-            else {
-                System.err.print(" ");
-            }
+        void print(int roll){
+            System.out.println(name);
+            this.roll = roll;
+            System.out.println(roll);
         }
-        System.err.println("");
-    }
+
+        G3(){
+            System.out.println("no light");
+        }
+
+        // G3(){
+        //         System.out.println("no light");
+        //     }
+
+        G3(int roll){
+            this.roll = roll;
+            System.out.println("light");
+            System.out.println(roll);
+        }
+
+    }  
+
+    public static void main(String[] args){
+        // G3 s1 = new G3();
+        // s1.name="JASSI";
+        // s1.roll=200;
+        // System.out.println(s1.name);
+        // System.out.println(s1.roll);
+        // s1.print(205);
+        // System.out.println(s1.roll);
+        // G3 s2= new G3();
+        // s2.name="Aaa";
+        // s2.print(501);
+        // System.out.println(s2.roll);
+        // System.out.println(s1.roll);
+
+        G3 s3 = new G3(309);
+        G3 s4 = new G3();
     }
 }
-    
