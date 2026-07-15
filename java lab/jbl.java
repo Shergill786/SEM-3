@@ -36,77 +36,109 @@
 //     }
 // }
 
-import java.util.*;
+// import java.util.*;
 
-public class jbl {
-    public int arr[][];
-    int sum;
-    int multi;
+// public class jbl {
+//     public int arr[][];
+//     int sum;
+//     int multi;
 
-    public void getdata() {
-        Scanner sc = new Scanner(System.in);
+//     public void getdata() {
+//         Scanner sc = new Scanner(System.in);
 
-        arr = new int[4][4];
+//         arr = new int[4][4];
 
-        System.out.println("Enter 16 elements:");
+//         System.out.println("Enter 16 elements:");
 
-        for (int i = 0; i <= 3; i++) {
-            for (int j = 0; j <= 3; j++) {
-                arr[i][j] = sc.nextInt();
-            }
-        }
-    }
+//         for (int i = 0; i <= 3; i++) {
+//             for (int j = 0; j <= 3; j++) {
+//                 arr[i][j] = sc.nextInt();
+//             }
+//         }
+//     }
 
-    public void add() {
-        sum = 0;
+//     public void add() {
+//         sum = 0;
 
-        for (int i = 0; i <= 3; i++) {
-            for (int j = 0; j <= 3; j++) {
-                sum = sum + arr[i][j];
-            }
-        }
-    }
+//         for (int i = 0; i <= 3; i++) {
+//             for (int j = 0; j <= 3; j++) {
+//                 sum = sum + arr[i][j];
+//             }
+//         }
+//     }
 
-    public void multi() {
-        multi = 1;
+//     public void multi() {
+//         multi = 1;
 
-        for (int i = 0; i <= 3; i++) {
-            for (int j = 0; j <= 3; j++) {
-                multi = multi * arr[i][j];
-            }
-        }
-    }
+//         for (int i = 0; i <= 3; i++) {
+//             for (int j = 0; j <= 3; j++) {
+//                 multi = multi * arr[i][j];
+//             }
+//         }
+//     }
 
-    public void display() {
-        System.out.println("Matrix:");
+//     public void display() {
+//         System.out.println("Matrix:");
 
-        for (int i = 0; i <= 3; i++) {
-            for (int j = 0; j <= 3; j++) {
-                System.out.print(arr[i][j] + " ");
-            }
-            System.out.println();
-        }
+//         for (int i = 0; i <= 3; i++) {
+//             for (int j = 0; j <= 3; j++) {
+//                 System.out.print(arr[i][j] + " ");
+//             }
+//             System.out.println();
+//         }
 
-        System.out.println("SUM = " + sum);
-        System.out.println("PRODUCT = " + multi);
-    }
+//         System.out.println("SUM = " + sum);
+//         System.out.println("PRODUCT = " + multi);
+//     }
 
-    public void multply(){
-        for(int i=0;i<3;i++){
-            for(int j=0;j<3;j++){
-                c[i][j]=0;
-                for(int k=0;k<3;k++){
-                    c[i][j]=a[i][k]*c[k][j];
-                }
-            }
-        }
-    }
-    public static void main(String[] args) {
-        jbl obj = new jbl();
+//     public void multply(){
+//         for(int i=0;i<3;i++){
+//             for(int j=0;j<3;j++){
+//                 c[i][j]=0;
+//                 for(int k=0;k<3;k++){
+//                     c[i][j]=a[i][k]*c[k][j];
+//                 }
+//             }
+//         }
+//     }
+//     public static void main(String[] args) {
+//         jbl obj = new jbl();
 
-        obj.getdata();
-        obj.add();
-        obj.multi();
-        obj.display();
-    }
-}
+//         obj.getdata();
+//         obj.add();
+//         obj.multi();
+//         obj.display();
+//     }
+// }
+
+
+public class student {
+
+//     public int rollno;
+//     String name;
+//     float cgpa;
+
+//     public student(int rl, String n, float cg) {
+//         rollno = rl;
+//         name = n;
+//         cgpa = cg;
+//     }
+
+//     public int checkElig() {
+//         if (cgpa > 9.00) {
+//             return 1;
+//         } else {
+//             return 0;
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         student s = new student(101, "Jassi", 9.2f);
+//         int res=s.checkElig();
+//         if (res == 1) {
+//             System.out.println("Eligible");
+//         } else {
+//             System.out.println("Not Eligible");
+//         }
+//     }
+// }
