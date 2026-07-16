@@ -36,6 +36,8 @@
     //     }
     // }
     // System.err.println(smax);
+
+
 // import java.util.*;
   
 //   class Rectangle {
@@ -76,22 +78,59 @@
 // }
 
 
-class Stu {
-    static int count = 0;
-    Stu() {
-        count++;
-    }
-    void display() { 
-        System.out.println("Object" + count);
-    }
-}
-public class rgh {
-    public static void main(String[] args) {
-        Stu s1 = new Stu();
-        Stu s2 = new Stu();
-        Stu s3 = new Stu();
-        Stu s4 = new Stu();
+// class Stu {
+//     static int count = 0;
+//     Stu() {
+//         count++;
+//     }
+//     void display() { 
+//         System.out.println("Object" + count);
+//     }
+// }
+// public class rgh {
+//     public static void main(String[] args) {
+//         Stu s1 = new Stu();
+//         Stu s2 = new Stu();
+//         Stu s3 = new Stu();
+//         Stu s4 = new Stu();
 
-        s3.display();
+//         s3.display();
+//     }
+// }
+
+
+import java.util.*;
+public class rgh {
+    public boolean search(int arr[], int target) {
+        int n = arr.length;
+        int s = 0;
+        int e = n - 1;
+        while (s <= e) {
+            int m = (s + e) / 2;
+            if (arr[m] == target) {
+                return true;
+            } else if (arr[m] > target) {
+                e = m - 1;
+            } else {
+                s = m + 1;
+            }
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+        Scanner ob = new Scanner(System.in);
+        int n = ob.nextInt();
+        int arr[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = ob.nextInt();
+        }
+        int target = ob.nextInt();
+        rgh bs = new rgh();
+        if (bs.search(arr, target)) {
+            System.out.println("Element Found");
+        } else {
+            System.out.println("Element Not Found");
+        }
+        ob.close();
     }
 }
