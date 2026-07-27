@@ -547,3 +547,207 @@
 //         ob.close();
 //     }
 // }
+
+import java.util.Scanner;
+
+class BankAccount {
+    private String username;
+    private int accountNo;
+    private double amountWithdraw;
+    private double amountCredit;
+    private double totalAmount=1000;
+
+    public BankAccount(String username, int accountNo, double withdraw, double credit ) {
+        this.username = username;
+        this.accountNo = accountNo;
+        this.amountWithdraw = withdraw;
+        this.amountCredit = credit;
+        this.totalAmount = totalAmount - withdraw + credit;
+    }
+
+    public void Username(String username) {
+        this.username = username;
+    }
+    public void AccountNo(int accountNo) {
+        this.accountNo = accountNo;
+    }
+    public void AmountWithd(double amountWithdraw) {
+        this.amountWithdraw = amountWithdraw;
+    }
+    public void AmountCred(double amountCredit) {
+        this.amountCredit = amountCredit;
+    }
+
+
+    public void display() {
+        
+        System.out.println("Username " + username);
+        System.out.println("Account No  " + accountNo);
+        System.out.println("Withdraw " + amountWithdraw);
+        System.out.println("Credit " + amountCredit);
+        System.out.println("Total Amount  " + totalAmount);
+    }
+x   
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Username: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter Account No: ");
+        int acc = sc.nextInt();
+
+        System.out.print("Enter Withdraw Amount: ");
+        double withdraw = sc.nextDouble();
+
+        System.out.print("Enter Credit Amount: ");
+        double credit = sc.nextDouble();
+        if (credit<0){
+            credit=0;
+        }
+
+        BankAccount obj = new BankAccount(name, acc, withdraw, credit);
+        obj.display();
+
+    }
+}
+// class java
+// {
+//   public static void main(String ab[])
+//   {
+//     short x = 12;
+//     short y = 3;
+//     short value;
+//     value = x / y;
+//     System.out.println("x + y = " + value);
+//   }
+// }
+
+// max elemts
+// import java.util.*;
+// public class java{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//     int[] arr=new int[n];
+//     for(int i=0;i<n;i++){
+//         arr[i]=sc.nextInt();
+
+//     }
+//     int max=arr[0];
+//     int min=arr[0];
+//     int maxcount=0;
+//     int mincount=0;
+//     for(int i=0;i<n;i++){
+//         if(max<arr[i]){
+//             max=arr[i];
+//             maxcount=i;
+//         }    
+//         if (min>arr[i]){
+//             min=arr[i];
+//             mincount=i;
+//         }
+//         } 
+
+//     System.err.println("max="+max);
+//     System.err.println("index" + maxcount);
+//     System.err.println("min="+min);
+//     System.err.println("index=" + mincount);
+//     }
+
+// }
+
+// import java.util.*;
+// public class java{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//     int[] arr=new int[n];
+//     for(int i=0;i<n;i++){
+//         arr[i]=sc.nextInt();
+//     }
+//     int sum=0;
+//     for(int i=0;i<n;i++){
+//         sum+=arr[i];
+//     }
+//     int avg = sum/n; 
+//     // System.err.println("avg "+avg);
+//     int count =0;
+//     for (int i=avg;i<n;i++){
+//         count++;
+//     }
+//     System.err.println("count " + count);
+//     }
+//     }
+
+// import java.util.*;
+// public class java{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//     int[] arr=new int[n];
+//     for(int i=0;i<n;i++){
+//         arr[i]=sc.nextInt();
+//     }
+//     int flag =1;
+//     for(int i=1;i<n-1;i++){
+//         if(arr[i]<arr[i-1]){
+//             flag=0;
+//         }
+//     }
+//     System.err.println("result "+ flag);
+//     }}
+
+
+// import java.util.*;
+// public class java{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//     int[] arr=new int[n];
+//     for(int i=0;i<n;i++){
+//         arr[i]=sc.nextInt();
+//     }
+//     int post=0;
+//     int neg=0;
+//     int ze=0;
+//     for(int i=0;i<n;i++){
+//         if (arr[i]>0){
+//             post++;
+//         }
+//         if(arr[i]<0){
+//             neg++;
+//         }
+//         if(arr[i]==0){
+//             ze++;
+//         }
+//     }
+//     System.err.println("post "+post);
+//     System.err.println("neg "+neg);
+//     System.err.println("zero "+ze);
+//     }
+//     }
+
+
+// import java.util.*;
+// public class java{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int k=sc.nextInt();
+//     int[] arr=new int[n];
+//     for(int i=0;i<n;i++){
+//         arr[i]=sc.nextInt();
+//     }
+//     int count=0;
+//     for(int i=0;i<n;i++){
+//         if(arr[i]%k==0){
+//             count++;
+//         }
+//     }
+//     System.err.println("count"+count);
+//     }
+// }
+
+
+

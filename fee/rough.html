@@ -1,91 +1,41 @@
-<!-- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Image Shadow</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
 <style>
-img{
-    width:300px;
-    height:300px;
-    border:1px solid black;
-}
-
-#effect1:checked ~ .image1{
-    box-shadow:-10px -10px 20px blue;
-}
-
-#effect2:checked ~ .image1{
-    box-shadow:10px 10px 20px red;
-}
-</style>
-</head>
-<body>
-
-<div>
-    <input type="radio" id="effect1" name="effect">
-    <label for="effect1">Effect 1</label>
-
-    <input type="radio" id="effect2" name="effect">
-    <label for="effect2">Effect 2</label>
-
-    <br><br>
-
-    <img src="images/images.jpg" class="image1">
-</div>
-
-</body>
-</html> -->
-<!DOCTYPE html>
-<html>
-<head>
-    <title>CSS Transform Example</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<style>
-    div.main {
-    margin-left: 100px;
-}
-
-div.a {
-    width: 150px;
-    background-color: yellow;
-    transform: rotate(20deg);
-    border: 2px solid blue;
-}
-
-div.b {
-    width: 150px;
-    background-color: yellow;
-    transform: skewY(20deg);
-    border: 2px solid blue;
-}
-
-div.c {
-    width: 150px;
-    background-color: yellow;
-    transform: scaleY(1.5);
-    border: 2px solid blue;
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    grid-template-columns: 496px 500px 500px;
+    grid-template-rows:265px 270px 250px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 </style>
 <body>
+    <div class="container">
+        <div class="i1" style="background-color:rgb(122, 26, 26)">item 1</div>
+        <div class="i2" style="background-color: rgb(175, 156, 119);">item 2</div>
+        <div class="i3" style="background-color: blue;">item 3</div>
+        <div class="i4" style="background-color: brown;">item 4</div>
+        <div class="i5" style="background-color: darkmagenta;">item 5</div>
+        <div class="i6" style="background-color: dimgray;">item 6</div>
+        <div class="i7" style="background-color: grey;">item 7</div>
+        <div class="i8" style="background-color: hotpink;">item 8</div>
+        <div class="i9" style="background-color: darkgoldenrod;">item 9</div>
 
-<div class="main">
-    <h1>CSS Transform Examples</h1>
 
-    <h2>transform: rotate</h2>
-    <div class="a">Hello Friends!</div>
-    <br><br>
-
-    <h2>transform: skewY</h2>
-    <div class="b">Hello Friends!</div>
-    <br><br>
-
-    <h2>transform: scaleY</h2>
-    <div class="c">Hello Friends!</div>
-
-</div>
-
+    </div>
 </body>
 </html>
