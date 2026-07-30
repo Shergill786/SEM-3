@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Circular Loader</title>
+
+<style>
+
+.loader{
+    width:100px;
+    height:100px;
+    margin: auto;
+    border:10px solid rgb(105, 16, 16);
+    border-top:10px solid green;
+    border-radius:50%;
+}
+
+#load:checked ~ .loader{
+    animation:spin 1s linear 1 ;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<input type="checkbox" id="load">
+<label for="load">Start Loading</label>
+
+<div class="loader"></div>
+
+</body>
+</html>
