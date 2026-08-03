@@ -72,7 +72,7 @@ class hello{
 
 }
 
-public class Main {
+public class rgh {
     int x;
     static int y = 13;
 
@@ -103,3 +103,4 @@ public class Main {
 
     }
 }
+
