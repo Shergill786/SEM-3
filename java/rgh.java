@@ -57,29 +57,29 @@
 //     }
 // }
 
-class hello{
-    int a;
-    static int b = 68;
+// class hello{
+//     int a;
+//     static int b = 68;
 
-    static{
-        System.out.println("G3");
-        System.out.println("G3 again");
-    }
+//     static{
+//         System.out.println("G3");
+//         System.out.println("G3 again");
+//     }
 
-    hello(){
-        System.out.println("G3 nahi padhti");
-    }
+//     hello(){
+//         System.out.println("G3 nahi padhti");
+//     }
 
-}
+// }
 
-public class rgh {
-    int x;
-    static int y = 13;
+// public class rgh {
+//     int x;
+//     static int y = 13;
 
-    static{
-        System.out.println("G3 is:");
-    }
-    public static void main(String[] args) {
+//     static{
+//         System.out.println("G3 is:");
+//     }
+//     public static void main(String[] args) {
         // hello o1 = new hello();
         // o1.a = 123;
         // hello.b = 234;
@@ -101,6 +101,6 @@ public class rgh {
         // System.out.println(ob1.y);
 
 
-    }
-}
+//     }
+// }
 
