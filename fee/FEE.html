@@ -1693,3 +1693,74 @@ div{
     <input type="submit"
 </body>
 </html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom List</title>
+
+<style>
+    ol.custom-steps{
+        list-style: none;
+        counter-reset: count;
+    }
+
+    ol.custom-steps li{
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 45px;
+        min-height: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    ol.custom-steps li::before{
+        counter-increment: count;
+        content: counter(count);
+        display: flex;
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(74, 74, 4);
+        color: white;
+        font-weight: bold;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #toggle:checked ~ ol.custom-steps{
+        list-style: count;
+        padding-left: 40px;
+    }
+
+    #toggle:checked ~ ol.custom-steps li{
+        display: list-item;
+        position:relative;
+        margin-bottom: 10px;
+
+    }
+
+    #toggle:checked ~ ol.custom-steps li::before{
+        content: none;
+    }
+</style>
+</head>
+
+<body>
+
+<input type="checkbox" id="toggle">
+<label for="toggle">Show Original</label>
+
+<ol class="custom-steps">
+    <li>Create a list</li>
+    <li>Verify your ID</li>
+    <li>Setup your profile</li>
+</ol>
+
+</body>
+</html> -->
