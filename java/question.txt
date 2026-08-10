@@ -1,0 +1,164 @@
+
+import java.util.*;
+
+// A college wants to automate the grading process. The teacher enters the marks of a student (out of 100), and the system should display the corresponding grade.
+// Grading Criteria
+// 90–100 → Grade A
+// 75–89 → Grade B
+// 60–74 → Grade C
+// 40–59 → Grade D
+// Below 40 → Fail
+
+// import java.util.*;
+// public class quest{
+//     public static void main(String[] args) {
+//             Scanner sc=new Scanner(System.in);
+//             System.err.println("Marks");
+//             int n=sc.nextInt();
+
+//             if (n>=90){
+//                 System.out.println("Grade A");
+//             }
+//             else if (n>=75){
+//                 System.err.println("Grade B");
+
+//             }
+//             else if (n>=60){
+//                 System.err.println("Grade C");
+
+//             }
+//             else {
+//                 System.err.println("Grade D");
+//             }
+
+//     }
+// }
+
+
+// Scenario
+// An electricity department charges customers based on their electricity consumption.
+// Billing Rules
+// First 100 units → ₹5/unit
+// Next 100 units → ₹7/unit
+// Remaining units → ₹10/unit
+
+
+// import java.util.*;
+// public class quest{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.err.println("UNITS");
+//         int units=sc.nextInt();
+//         int bill;
+
+//         if (units<=100){
+//             bill=units*5;
+//         }
+//         else if (units<=200){
+//             bill=(100*5)+(units-100)*7;
+//         }
+//         else{
+//             bill=(100*5)+(100*7)+(units-200)*10;
+//         }
+//     System.err.println("Bill :"+ bill);
+//         }
+// }
+
+// Scenario
+// A company calculates the monthly salary of employees using the following rules:
+// Basic Salary is entered by the user.
+// HRA = 20% of Basic Salary
+// DA = 10% of Basic Salary
+// Total Salary = Basic + HRA + DA
+
+// import java.util.*;
+// public class quest{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+
+//         System.err.println("Basic");
+
+//         double basic=sc.nextDouble();
+        
+//         double hra= basic*0.20;
+//         double da=basic*0.10;
+
+//         double total = hra +da+basic;
+
+//         System.err.println("salary :"+ total);
+//     }
+// }
+
+
+// Question 7: Number Reverser using Method
+// Difficulty: Easy ⭐
+// Scenario
+// A banking application masks account numbers by reversing them before displaying them.
+
+// Problem Statement
+// Create a method named reverseNumber() that accepts an integer and returns its reverse.
+
+// Input Format
+// An integer.
+
+// Output Format
+// Print the reversed number.
+
+// import java.util.*;
+// public class quest{
+
+//     static int rev(int n){
+//         int r=0;
+
+//         while (n>0){
+//             int digit=n%10;
+//             r=r*10+digit;
+//             n=n/10;
+
+//         }
+//         return r;
+//     }
+
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+
+//         System.err.println("number :");
+//         int n=sc.nextInt();
+
+//         int res=rev(n);
+//         System.err.println(res);
+
+//     }
+// }
+
+
+// Difficulty: Easy ⭐
+// Scenario
+// A teacher records the attendance of students for five days.
+// The program should count how many days the student was present.
+// 1 = Present
+// 0 = Absent
+
+// Problem Statement
+// Store attendance in an array and count the total number of present days.
+
+
+// import java.util.*;
+// public class quest{
+//     public static void main(String[] args) {
+//         Scanner cs=new Scanner(System.in);
+        
+//         int[] att=new int[5];
+//         int count=0;
+
+//         for (int i=0;i<5;i++){
+//             att[i]=cs.nextInt();
+
+//             if(att[i]==1){
+//                 count++;
+//             }
+//         }
+//         System.err.println("present:"+count);
+//         }
+//     }
+
