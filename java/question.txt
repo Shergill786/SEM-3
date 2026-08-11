@@ -162,3 +162,120 @@ import java.util.*;
 //         }
 //     }
 
+// Question - Bus Reservation System
+// Scenario
+// A travel company has a bus containing 5 rows and 4 seats in each row.
+// Initially, every seat is available.
+// The system should allow the user to reserve seats and display the remaining available seats.
+
+// Problem Statement
+// Create a Java program using a 2D Array to represent bus seats.
+// Rules:
+// 0 → Available
+// 1 → Reserved
+// Operations:
+// Display Seat Layout
+// Reserve a Seat
+// Count Reserved Seats
+// Count Available Seats
+
+// import java.util.*;
+// public class quest{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+
+//         int[][] seats=new int[5][4];
+        
+//         int n=sc.nextInt();
+
+//         for(int i=0;i<n;i++){
+//             int row=sc.nextInt();
+//             int col=sc.nextInt();
+//             seats[row-1][col-1]=1;
+//         }
+
+//         System.err.println("Seat layout");
+//         for(int i=0;i<5;i++){
+//             for (int j=0;j<4;j++){
+//                 System.err.println(seats[i][j]);
+//             }
+//             System.err.println();
+//         }
+        
+//     int res=0;
+
+//     for(int i=0;i<5;i++){
+//         for(int j=0;j<4;j++){
+//             if (seats[i][j]==i){
+//                 res++;
+//             }
+//         }
+//     }
+//     int avail=20-res;
+
+//     System.err.println("resvered"+res);
+//     System.err.println("avail"+avail);
+//     }
+
+// }
+
+// Question - Reverse Every Word
+// Problem Statement
+// Given a sentence containing words separated by spaces, reverse every individual word while keeping the word order unchanged.
+
+// import java.util.*;
+// public class quest{
+//       public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String sentence = sc.nextLine();
+//         String[] words = sentence.split(" ");
+//         for (int i = 0; i < words.length; i++) {
+//             String reversed = "";
+//             for (int j = words[i].length() - 1; j >= 0; j--) {
+//                 reversed += words[i].charAt(j);
+//             }
+//             System.out.print(reversed + " ");
+//         }
+// }
+// }
+
+// Question  - Matrix Boundary Sum
+// Problem Statement
+// A school stores classroom seating arrangements in the form of a matrix. Your task is to calculate the sum of all boundary elements of the given matrix.
+// The boundary elements include:
+// First row
+// Last row
+// First column
+// Last column
+// Corner elements should be counted only once.
+
+// Input Format
+// The first line contains two integers R and C, representing the number of rows and columns.
+// The next R lines each contain C space-separated integers representing the matrix.
+
+// import java.util.Scanner;
+// public class quest {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int R = sc.nextInt();
+//         int C = sc.nextInt();
+
+//         int[][] matrix = new int[R][C];
+
+//         for (int i = 0; i < R; i++) {
+//             for (int j = 0; j < C; j++) {
+//                 matrix[i][j] = sc.nextInt();
+//             }
+//         }
+//         int sum = 0;
+//         for (int i = 0; i < R; i++) {
+//             for (int j = 0; j < C; j++) {
+//                 // Boundary element
+//                 if (i == 0 || i == R - 1 || j == 0 || j == C - 1) {
+//                     sum += matrix[i][j];
+//                 }
+//             }
+//         }
+//         System.out.println("Boundary Sum = " + sum);
+//     }
+// }
