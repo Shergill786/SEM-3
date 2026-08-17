@@ -1902,3 +1902,129 @@ div{
     </header>
 </body>
 </html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Even Odd</title>
+</head>
+<script>
+    num =parseInt(prompt("number"))
+for(var i=1;i<=10;i++){
+    prod=num*i
+   // document.write(num+"x"+i+"="+prod+"<br>");    
+    document.write(`${num} x ${i} = ${prod} <br>`)
+}
+</script>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    for (let i = 1; i <= 30; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            document.writeln(i + " is multiple of both 3 and 5<br>");
+        } else if (i % 3 === 0) {
+            document.writeln(i + " is multiple of 3<br>");
+        } else if (i % 5 === 0) {
+            document.writeln(i + " is multiple of 5<br>");
+        }
+    }
+</script>
+<body>
+    
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let rows = parseInt(prompt("Enter number of rows:"));
+let cols = parseInt(prompt("Enter number of columns:"));
+
+let num = 1;
+
+for (let i = 1; i <= rows; i++) {
+    let row = "";
+
+    for (let j = 1; j <= cols; j++) {
+        row += num + "\t";
+        num++;
+    }
+
+    document.write(row<br>);
+}
+</script>
+<body>
+    
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Ordered List</title>
+</head>
+<body>
+
+    <h1>Your Ordered List</h1>
+
+    <div id="listcontainer"></div>
+
+    <script>
+        let n = parseInt(prompt("How many items do you want to add?"));
+        let choice = prompt("Enter list style: 1, A, a, I, or i");
+
+        let type;
+
+        switch (choice) {
+            case "1":
+                type = "1";
+                break;
+
+            case "A":
+                type = "A";
+                break;
+
+            case "a":
+                type = "a";
+                break;
+
+            case "I":
+                type = "I";
+                break;
+
+            case "i":
+                type = "i";
+                break;
+            default:
+            alert("Invalid List type")
+            throw new Error();
+
+            }
+
+        let listHtml = "<ol type='" + type + "'>";
+
+        for (let i = 1; i <= n; i++) {
+            let item = prompt("Enter item " + i + ":");
+            listHtml += "<li>" + item + "</li>";
+        }
+
+        listHtml += "</ol>";
+
+        document.getElementById("listcontainer").innerHTML = listHtml;
+    </script>
+
+</body>
+</html> -->

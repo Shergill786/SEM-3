@@ -1,20 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Table</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        input {
+            position: relative;
+            accent-color: green;
+        }
+
+        .container {
+            display: grid;
+            width: 600px;
+            height: 600px;
+            margin: 20px auto;
+            border: 2px solid navy;
+            box-shadow: 10px 20px 30px yellowgreen;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+        }
+
+        .black {
+            background: black;
+        }
+
+        .white {
+            background: white;
+        }
+
+        #color:checked ~ .container .black {
+            background: yellow;
+            border-radius: 50%;
+        }
+
+        #color:checked ~ .container .white {
+            background: blue;
+            border-radius: 50%;
+        }
+    </style>
 </head>
+
 <body>
-    
-    <table border="1">
-        <tr>
-            <th style="width: 100px;">Name</th>
-            <th style="width: 250px;">Email</th>
-            <th style="width: 100px;">City</th>
-        </tr>
-        
-        <tbody id="data"></tbody>
-    </table>
-    
-    <script src="sample.js"></script>
+
+    <input type="checkbox" id="color">
+    <label for="color">change shape and color</label>
+
+    <div class="container" id="chessboard"></div>
+
+    <script>
+
+        let board = document.getElementById("chessboard");
+
+        for (let i = 1; i <= 8; i++) {
+
+            for (let j = 1; j <= 8; j++) {
+
+                let box = document.createElement("div");
+
+                if ((i + j) % 2 == 0) {
+                    box.className = "white";
+                }
+                else {
+                    box.className = "black";
+                }
+
+                board.appendChild(box);
+            }
+        }
+
+    </script>
+
 </body>
 </html>

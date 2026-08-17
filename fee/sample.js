@@ -106,11 +106,32 @@
 //         break;
 // }
 // console.log("Result:", result);
-let name = prompt("Enter your name");
-let email = prompt("Enter your email");
-let city = prompt("Enter your city");
+// let name = prompt("Enter your name");
+// let email = prompt("Enter your email");
+// let city = prompt("Enter your city");
 
-document.getElementById("data").innerHTML =
-    "<td>" + name + "</td>" +
-    "<td>" + email + "</td>" +
-    "<td>" + city + "</td>";
+// document.getElementById("data").innerHTML =
+//     "<td>" + name + "</td>" +
+//     "<td>" + email + "</td>" +
+//     "<td>" + city + "</td>";
+// let result = "";
+// for (let i = 1; i <= 20; i++) {
+//     if (i % 2 == 0) {
+//         result += "<span style='color: blue; font-size: 22px;'>" + i + "</span> ";
+//     }
+//     else {
+//         result += "<span style='color: red; font-size: 22px;'>" + i + "</span> ";
+//     }
+// }
+// document.getElementById("output").innerHTML = result;
+let n = Number(prompt("Enter n:"));
+
+for (let i = 1; i <= n; i++) {
+    let row = "";
+
+    for (let j = 1; j <= n; j++) {
+        row += j + " ";
+    }
+
+    console.log(row);
+}
