@@ -1,6 +1,7 @@
-import pandas as pd
-
-df = pd.read_excel("SDE/Diabetes_data.xlsx")
+# import pandas as pd
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+# df = pd.read_excel("SDE/Diabetes_data.xlsx")
 
 # print(df)
 # print(df.shape)
@@ -22,5 +23,34 @@ df = pd.read_excel("SDE/Diabetes_data.xlsx")
 # df2=df[['Name','Roll No','Marks Obtained','Group.']]
 # print(df2['Group.'].value_counts())
 
+# print(df)
+
+# print(df.corr(numeric_only=True))
+
+# plt.figure(figsize=(8, 6))
+# sns.heatmap(df.corr(numeric_only=True),
+#             annot=True,
+#             cmap="coolwarm")
+
+# plt.show()
+
+
+import pandas as pd
+import numpy as np
+
+df = pd.read_excel("SDE/student.xlsx")
 print(df)
 
+# Outliers
+q1 = np.percentile(df['Marks1'], 25)
+q3 = np.percentile(df['Marks1'], 75)
+
+IQR = q3 - q1
+print(IQR)
+
+# lower = q1 - 1.5 * IQR
+# upper = q3 + 1.5 * IQR
+
+# outliers = df[(df['Marks1'] < lower) | (df['Marks1'] > upper)]
+
+# print(outliers)
