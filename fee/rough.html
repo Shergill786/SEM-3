@@ -1,86 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess Board</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            text-align: center;
-        }
-
-        input {
-            position: relative;
-            accent-color: green;
-        }
-
-        .container {
-            display: grid;
-            width: 600px;
-            height: 600px;
-            margin: 20px auto;
-            border: 2px solid navy;
-            box-shadow: 10px 20px 30px yellowgreen;
-            grid-template-columns: repeat(8, 1fr);
-            grid-template-rows: repeat(8, 1fr);
-        }
-
-        .black {
-            background: black;
-        }
-
-        .white {
-            background: white;
-        }
-
-        #color:checked ~ .container .black {
-            background: yellow;
-            border-radius: 50%;
-        }
-
-        #color:checked ~ .container .white {
-            background: blue;
-            border-radius: 50%;
-        }
-    </style>
+    <title>Shape Change</title>
 </head>
 
 <body>
 
-    <input type="checkbox" id="color">
-    <label for="color">change shape and color</label>
+<h2>Change Shape</h2>
 
-    <div class="container" id="chessboard"></div>
+<div id="box"></div>
 
-    <script>
+<br>
 
-        let board = document.getElementById("chessboard");
+<input type="radio" name="shape" onclick="circle()">Circle
 
-        for (let i = 1; i <= 8; i++) {
+<input type="radio" name="shape" onclick="square()">Square
 
-            for (let j = 1; j <= 8; j++) {
+<input type="radio" name="shape" onclick="rectangle()">Rectangle
 
-                let box = document.createElement("div");
+<input type="radio" name="shape" onclick="fillYellow()">Fill Yellow
 
-                if ((i + j) % 2 == 0) {
-                    box.className = "white";
-                }
-                else {
-                    box.className = "black";
-                }
+<input type="radio" name="shape" onclick="fillNone()">Fill None
 
-                board.appendChild(box);
-            }
-        }
 
-    </script>
+<style>
+    #box {
+        width: 100px;
+        height: 100px;
+        border: 3px solid blue;
+       
+    }
+</style>
+
+
+<script>
+
+function circle() {
+    document.getElementById("box").style.borderRadius = "50%";
+}
+
+function square() {
+    document.getElementById("box").style.width = "100px";
+    document.getElementById("box").style.height = "100px";
+    document.getElementById("box").style.borderRadius = "0";
+}
+
+function rectangle() {
+    document.getElementById("box").style.width = "180px";
+    document.getElementById("box").style.height = "100px";
+    document.getElementById("box").style.borderRadius = "0";
+}
+
+function fillYellow() {
+    document.getElementById("box").style.backgroundColor = "yellow";
+}
+
+function fillNone() {
+    document.getElementById("box").style.backgroundColor = "transparent";
+}
+
+</script>
 
 </body>
 </html>
