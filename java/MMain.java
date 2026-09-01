@@ -1,49 +1,55 @@
 import java.util.Scanner;
 
-class Node {
-    int data;
-    Node next;
+// Custom Exception
+class InvalidMarksException extends Exception {
 
-    public Node(int data) {
-        this.data = data;
-        this.next = null;
+    public InvalidMarksException(String message) {
+        super(message);
     }
 }
 
-class LinkedList {
-    Node head;
-
-    public void insertAtHead(int value) {
-        Node newNode = new Node(value);
-
-        newNode.next = head;
-        head = newNode;
+// Student Class
+class Student {
+    private int marks;
+    public Student(int marks) {
+        this.marks = marks;
     }
 
-    public void display() {
-        Node current = head;
+    public void checkMarks() throws InvalidMarksException {
 
-        while (current != null) {
-            System.out.print(current.data + " ");
-            current = current.next;
+        if (marks < 0 || marks > 100) {
+            throw new InvalidMarksException(
+                "Marks must be between 0 and 100"
+            );
         }
+
+        System.out.println("Valid marks: " + marks);
     }
 }
 
-public class MMain {
+public class Main {
+
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt();
+        int marks = sc.nextInt();
 
-        LinkedList list = new LinkedList();
+    
+        Student student = new Student(marks);
 
-        for (int i = 0; i < n; i++) {
-            int value = sc.nextInt();
-            list.insertAtHead(value);
+        try {
+
+            student.checkMarks();
+
+        } catch (InvalidMarksException e) {
+
+            System.out.println("Error: " + e.getMessage());
+
+        } finally {
+
+            System.out.println("Marks checking completed");
         }
-
-        list.display();
 
         sc.close();
     }

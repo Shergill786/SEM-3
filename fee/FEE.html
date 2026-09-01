@@ -2543,4 +2543,197 @@ function applyShadow(color){
 </script>
 
 </body>
+</html> --><!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Shape Change</title>
+</head>
+
+<body>
+
+<h2>Change Shape</h2>
+
+<div id="box"></div>
+
+<br>
+
+<input type="radio" name="shape" onclick="circle()">Circle
+
+<input type="radio" name="shape" onclick="square()">Square
+
+<input type="radio" name="shape" onclick="rectangle()">Rectangle
+
+<input type="radio" name="shape" onclick="fillYellow()">Fill Yellow
+
+<input type="radio" name="shape" onclick="fillNone()">Fill None
+
+
+<style>
+    #box {
+        width: 100px;
+        height: 100px;
+        border: 3px solid blue;
+       
+    }
+</style>
+
+
+<script>
+
+function circle() {
+    document.getElementById("box").style.borderRadius = "50%";
+}
+
+function square() {
+    document.getElementById("box").style.width = "100px";
+    document.getElementById("box").style.height = "100px";
+    document.getElementById("box").style.borderRadius = "0";
+}
+
+function rectangle() {
+    document.getElementById("box").style.width = "180px";
+    document.getElementById("box").style.height = "100px";
+    document.getElementById("box").style.borderRadius = "0";
+}
+
+function fillYellow() {
+    document.getElementById("box").style.backgroundColor = "yellow";
+}
+
+function fillNone() {
+    document.getElementById("box").style.backgroundColor = "transparent";
+}
+
+</script>
+
+</body>
 </html> -->
+
+
+<!-- 
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+    </head>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #222;
+        }
+    
+        .calculator {
+            width: 330px;
+            background: #000;
+            padding: 20px;
+            border-radius: 30px;
+        }
+    
+        #display {
+            width: 100%;
+            height: 90px;
+            background: #000;
+            color: white;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 30px;
+            text-align: right;
+            border: none;
+        }
+    
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+    
+        button {
+            height: 60px;
+            border: none;
+            border-radius: 50%;
+            font-size: 22px;
+            background: #333;
+            color: white;
+            cursor: pointer;
+        }
+    
+        .operator {
+            background: rgb(201, 200, 199);
+            color: black;
+        }
+    
+        .clear {
+            background: #a5a5a5;
+            color: black;
+        }
+    
+        .equal {
+            background: rgb(110, 110, 109);
+        }
+    </style>
+    
+    <body>
+    
+        <div class="calculator">
+    
+            <input type="text" id="display" readonly>
+    
+            <div class="buttons">
+    
+                <button class="clear" onclick="clearDisplay()">AC</button>
+    
+                <button class="operator" onclick="show('(')">(</button>
+    
+                <button class="operator" onclick="show(')')">)</button>
+    
+                <button class="operator" onclick="show('/')">÷</button>
+    
+                
+    
+                <button onclick="show('7')">7</button>
+                <button onclick="show('8')">8</button>
+                <button onclick="show('9')">9</button>
+                <button class="operator" onclick="show('*')">×</button>
+    
+    
+                <button onclick="show('4')">4</button>
+                <button onclick="show('5')">5</button>
+                <button onclick="show('6')">6</button>
+                <button class="operator" onclick="show('-')">−</button>
+    
+    
+                <button onclick="show('1')">1</button>
+                <button onclick="show('2')">2</button>
+                <button onclick="show('3')">3</button>
+                <button class="operator" onclick="show('+')">+</button>
+    
+    
+                <button onclick="show('0')">0</button>
+    
+                <button onclick="show('.')">.</button>
+    
+                <button onclick="deleteLast()">DEL</button>
+    
+                <button class="equal" onclick="calculate()">=</button>
+    
+            </div>
+    
+        </div>
+    
+        <script src="sample.js"></script>
+    
+    </body>
+    </html>
+     -->
+    

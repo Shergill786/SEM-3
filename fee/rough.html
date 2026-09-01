@@ -1,65 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Shape Change</title>
+    <title>Zoom Image</title>
+    <script>
+        function zoomin() {
+            var img = document.getElementById("img1");
+            var currentWidth = img.clientWidth;
+            var currentHeight = img.clientHeight;
+
+            img.style.width = (currentWidth + 30) + "px";
+            img.style.height = (currentHeight + 30) + "px";
+        }
+
+        function zoomout() {
+            var img = document.getElementById("img1");
+            var currentWidth = img.clientWidth;
+            var currentHeight = img.clientHeight;
+
+            if (currentWidth > 50 && currentHeight > 50) {
+                img.style.width = (currentWidth - 30) + "px";
+                img.style.height = (currentHeight - 30) + "px";
+            }
+        }
+    </script>
 </head>
 
 <body>
 
-<h2>Change Shape</h2>
+    <div>
+        <img id="img1" src="Images/images.jpg" height="150" width="150">
+    </div>
 
-<div id="box"></div>
+    <br><br>
 
-<br>
-
-<input type="radio" name="shape" onclick="circle()">Circle
-
-<input type="radio" name="shape" onclick="square()">Square
-
-<input type="radio" name="shape" onclick="rectangle()">Rectangle
-
-<input type="radio" name="shape" onclick="fillYellow()">Fill Yellow
-
-<input type="radio" name="shape" onclick="fillNone()">Fill None
-
-
-<style>
-    #box {
-        width: 100px;
-        height: 100px;
-        border: 3px solid blue;
-       
-    }
-</style>
-
-
-<script>
-
-function circle() {
-    document.getElementById("box").style.borderRadius = "50%";
-}
-
-function square() {
-    document.getElementById("box").style.width = "100px";
-    document.getElementById("box").style.height = "100px";
-    document.getElementById("box").style.borderRadius = "0";
-}
-
-function rectangle() {
-    document.getElementById("box").style.width = "180px";
-    document.getElementById("box").style.height = "100px";
-    document.getElementById("box").style.borderRadius = "0";
-}
-
-function fillYellow() {
-    document.getElementById("box").style.backgroundColor = "yellow";
-}
-
-function fillNone() {
-    document.getElementById("box").style.backgroundColor = "transparent";
-}
-
-</script>
+    <button onclick="zoomin()">Zoomin</button>
+    &nbsp;
+    <button onclick="zoomout()">Zoomout</button>
 
 </body>
 </html>
