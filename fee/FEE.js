@@ -50,3 +50,57 @@
 // }
 
 // console.log(newText);
+
+
+// let div =document.createElement('div');
+// div.id='content';
+// div.innerHTML=<p>Create Element Example</p>
+// document.body.appendChild(div);
+// let div = document.createElement('div');
+// div.id = 'content';
+// div.innerHTML = '<p>Create Element example</p>';
+// document.body.appendChild(div);
+
+// let div = document.createElement('div');
+// div.id = 'content';
+// let span = document.createTextNode('Create Textnode example');
+// span.appendChild(text);
+// div.appendChild(span);
+// document.body.appendChild(div);
+
+
+// let div1 = document.createElement('div');
+// div1.id = 'div1';
+
+// let div1h2 = document.createElement('h2');
+// div1h2.id = 'div1h2';
+// div1h2.textContent = 'First DIV element';
+
+
+// let div2 = document.createElement('div');
+// div2.id = 'div2';
+
+// let div2h2 = document.createElement('h2');
+// div2h2.id = 'div2h2';
+// div2h2.textContent = 'Second DIV element';
+
+
+// div1.appendChild(div1h2);
+// div2.appendChild(div2h2);
+
+// document.body.appendChild(div1);
+// document.body.appendChild(div2);
+    
+
+// let div = document.createElement("div");
+// div.id = "mainDiv";
+
+// let h2 = document.createElement("h2");
+// h2.textContent = "Created through JavaScript";
+
+// let marquee = document.createElement("marquee");
+// marquee.textContent = "Running Text";
+
+// div.appendChild(h2);
+// div.appendChild(marquee);
+// document.body.appendChild(div);
