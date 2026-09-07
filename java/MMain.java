@@ -1,17 +1,18 @@
-public class MMain {
+public class MMain{
     public static void main(String[] args) {
+        try{
 
-        try {
-            int age = 15;
+            int a=10;
 
-            if (age < 18) {
-                throw new IllegalArgumentException("Not eligible");
+            if(a<18){
+                throw new Error("NIGGA");
             }
+        System.err.println("NOT NIGGA");
 
-            System.out.println("Eligible");
-
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
         }
-    }
+    catch(Error r){
+        System.err.println(r.getMessage());
+    } 
+
+           }
 }

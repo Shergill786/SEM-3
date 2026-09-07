@@ -1,41 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Zoom Image</title>
-    <script>
-        function zoomin() {
-            var img = document.getElementById("img1");
-            var currentWidth = img.clientWidth;
-            var currentHeight = img.clientHeight;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-            img.style.width = (currentWidth + 30) + "px";
-            img.style.height = (currentHeight + 30) + "px";
-        }
-
-        function zoomout() {
-            var img = document.getElementById("img1");
-            var currentWidth = img.clientWidth;
-            var currentHeight = img.clientHeight;
-
-            if (currentWidth > 50 && currentHeight > 50) {
-                img.style.width = (currentWidth - 30) + "px";
-                img.style.height = (currentHeight - 30) + "px";
-            }
-        }
-    </script>
+    <script src="sample.js"></script>
 </head>
-
 <body>
-
-    <div>
-        <img id="img1" src="Images/images.jpg" height="150" width="150">
-    </div>
-
-    <br><br>
-
-    <button onclick="zoomin()">Zoomin</button>
-    &nbsp;
-    <button onclick="zoomout()">Zoomout</button>
-
+    
 </body>
 </html>

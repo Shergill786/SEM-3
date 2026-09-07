@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^winget install --id MSYS2\\.MSYS2 --silent --accept-source-agreements --accept-package-agreements$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

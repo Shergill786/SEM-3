@@ -2735,5 +2735,46 @@ function fillNone() {
     
     </body>
     </html>
-     -->
     
+     -->
+     <!-- <!DOCTYPE html>
+     <html>
+     <head>
+         <title>Zoom Image</title>
+         <script>
+             function zoomin() {
+                 var img = document.getElementById("img1");
+                 var currentWidth = img.clientWidth;
+                 var currentHeight = img.clientHeight;
+     
+                 img.style.width = (currentWidth + 30) + "px";
+                 img.style.height = (currentHeight + 30) + "px";
+             }
+     
+             function zoomout() {
+                 var img = document.getElementById("img1");
+                 var currentWidth = img.clientWidth;
+                 var currentHeight = img.clientHeight;
+     
+                 if (currentWidth > 50 && currentHeight > 50) {
+                     img.style.width = (currentWidth - 30) + "px";
+                     img.style.height = (currentHeight - 30) + "px";
+                 }
+             }
+         </script>
+     </head>
+     
+     <body>
+     
+         <div>
+             <img id="img1" src="Images/images.jpg" height="150" width="150">
+         </div>
+     
+         <br><br>
+     
+         <button onclick="zoomin()">Zoomin</button>
+         &nbsp;
+         <button onclick="zoomout()">Zoomout</button>
+     
+     </body>
+     </html> -->
