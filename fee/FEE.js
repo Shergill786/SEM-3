@@ -88,19 +88,66 @@
 // div1.appendChild(div1h2);
 // div2.appendChild(div2h2);
 
-// document.body.appendChild(div1);
-// document.body.appendChild(div2);
-    
+// // document.body.appendChild(div1);
+// // document.body.appendChild(div2);
 
-// let div = document.createElement("div");
-// div.id = "mainDiv";
 
-// let h2 = document.createElement("h2");
-// h2.textContent = "Created through JavaScript";
+// // let div = document.createElement("div");
+// // div.id = "mainDiv";
 
-// let marquee = document.createElement("marquee");
-// marquee.textContent = "Running Text";
+// // let h2 = document.createElement("h2");
+// // h2.textContent = "Created through JavaScript";
 
-// div.appendChild(h2);
-// div.appendChild(marquee);
-// document.body.appendChild(div);
+// // let marquee = document.createElement("marquee");
+// // marquee.textContent = "Running Text";
+
+// // div.appendChild(h2);
+// // div.appendChild(marquee);
+// // document.body.appendChild(div);
+
+// const input = document.getElementById("imageInput");
+// const preview = document.getElementById("preview");
+
+// input.addEventListener('change', function()){
+//     const file = document.getElementById("Image input").files[0];
+
+// }
+
+// document.getElementById("html").addEventListener("click", function () {
+
+//     const file = input.files[0];
+
+//     console.log(file.name);
+//     console.log(file.size);
+//     console.log(file.type);
+
+//     if (file) {
+//         const imageURL = URL.createObjectURL(file);
+
+//         preview.src = imageURL;
+//         preview.style.display = "block";
+//     }
+
+// });
+
+const input = document.getElementById("imageInput");
+const preview = document.getElementById("preview");
+
+input.addEventListener("change", function () {
+
+    const file = input.files[0];
+
+    if (file) {
+        console.log(file.name);
+        console.log(file.size);
+        console.log(file.type);
+
+        const imageURL = URL.createObjectURL(file);
+        preview.src = imageURL;
+        preview.style.display = "block";
+    }
+
+});
+
+const input = document.getElementById("Image input");
+input.addEventListener("change", )

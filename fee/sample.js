@@ -1,19 +1,12 @@
-const input = document.getElementById("imageInput");
-const preview = document.getElementById("preview");
+let arr1 = ["Node.js", "WEBTechnologies", "React-JS", "Python"];
+var newarr=[];
 
-document.getElementById("html").addEventListener("click", function () {
+for (i=0;i<arr1.length;i++){
 
-    const file = input.files[0];
+    str=arr1[1].toUpperCase();
+    newarr[i]=str;
 
-    console.log(file.name);
-    console.log(file.size);
-    console.log(file.type);
+}
 
-    if (file) {
-        const imageURL = URL.createObjectURL(file);
 
-        preview.src = imageURL;
-        preview.style.display = "block";
-    }
-
-});
+console.log(newarr);

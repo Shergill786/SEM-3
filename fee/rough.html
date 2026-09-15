@@ -2,15 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Preview</title>
 </head>
-
-<script src="sample.js"></script>
 <body>
-    <h2> select a picture to display</h2>
-    <input type="file" id="imageInput" accept="image/*"><br>
-    <button id="html"> show image </button><br>
-    
+
+    <h2>select pictures</h2>
+
+    <input type="file" id="imageInput" accept="image/*" multiple><br>
+
+    <script>
+const input = document.getElementById("imageInput");
+input.addEventListener("change", function () {
+    for(let i=0;i<input.files.length;i++){
+
+    const file = input.files[i];
+
+        console.log(file.name);
+        console.log(file.size);
+        console.log(file.type);
+
+    }
+
+});</script>
 </body>
 </html>
+
