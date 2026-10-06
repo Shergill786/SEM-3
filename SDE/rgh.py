@@ -41,10 +41,10 @@
 
 
 # students = [
-#     ("101", "Jaskirat Singh", "asd@asd.com", "3G3"),
-#     ("102", "angad Singh", "asd2@asd.com", "3G3"),
-#     ("103", "Harsh Singh", "harsh@asd.com", "3G3"),
-#     ("104", "Manjot Singh", "manjot@asd.com", "3G3")
+#     ("2510993426", "Jaskirat Singh", "asd@asd.com", "3G3"),
+#     ("2510993452", "angad Singh", "asd2@asd.com", "3G3"),
+#     ("2510993210", "Harsh Singh", "harsh@asd.com", "3G3"),
+#     ("2510993480", "Manjot Singh", "manjot@asd.com", "3G3")
 # ]
 
 # cursor.executemany("""
@@ -72,7 +72,7 @@ connection = sqlite3.connect("Student.db")
 cursor = connection.cursor()
 
 
-###### Update student
+##### Update student
 
 
 cursor.execute("""
@@ -89,7 +89,7 @@ WHERE roll_no = ?
 connection.commit()
 connection.close()
 
-print("Student updated successfully")
+# print("Student updated successfully")
 
 
 #### Delete student

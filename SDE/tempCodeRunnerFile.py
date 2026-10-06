@@ -1,8 +1,10 @@
-cursor.execute("SELECT * FROM Students")
 
-students_db = cursor.fetchall()
+# cursor.execute("""
+# DELETE FROM Students
+# WHERE roll_no = ?
+# """, ("101",))
 
-for student in students_db:
-    print(student)
+# connection.commit()
+# connection.close()
 
-connection.close()
+# print("Student deleted successfully")
