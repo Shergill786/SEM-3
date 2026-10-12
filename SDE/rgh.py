@@ -66,28 +66,28 @@
 
 # connection.close()
 
-import sqlite3
+# import sqlite3
 
-connection = sqlite3.connect("Student.db")
-cursor = connection.cursor()
-
-
-##### Update student
+# connection = sqlite3.connect("Student.db")
+# cursor = connection.cursor()
 
 
-cursor.execute("""
-UPDATE Students
-SET name = ?, email = ?, group_name = ?
-WHERE roll_no = ?
-""", (
-    "Jaskirat Singh",
-    "jaskirat@gmail.com",
-    "3G4",
-    "101"
-))
+# ##### Update student
 
-connection.commit()
-connection.close()
+
+# cursor.execute("""
+# UPDATE Students
+# SET name = ?, email = ?, group_name = ?
+# WHERE roll_no = ?
+# """, (
+#     "Jaskirat Singh",
+#     "jaskirat@gmail.com",
+#     "3G4",
+#     "101"
+# ))
+
+# connection.commit()
+# connection.close()
 
 # print("Student updated successfully")
 
@@ -103,3 +103,40 @@ connection.close()
 # connection.close()
 
 # print("Student deleted successfully")
+
+
+import sqlite3
+
+connection = sqlite3.connect("academics.db")
+cursor = connection.cursor()
+
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS departments (
+    deptid INTEGER PRIMARY KEY,
+    deptname TEXT NOT NULL
+)
+""")
+
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS students (
+    studentid INTEGER PRIMARY KEY,
+    studentname TEXT NOT NULL,
+    deptid INTEGER,
+    FOREIGN KEY (deptid) REFERENCES departments(deptid)
+)
+""")
+
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS results (
+    resultid INTEGER PRIMARY KEY,
+    studentid INTEGER,
+    subject TEXT NOT NULL,
+    marks INTEGER NOT NULL,
+    FOREIGN KEY (studentid) REFERENCES students(studentid)
+)
+""")
+
+connection.commit()
+connection.close()
+
+print("Tables created successfully!")
