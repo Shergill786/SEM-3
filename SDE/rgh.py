@@ -153,7 +153,7 @@
 
 # cursor.executemany("""
 #     INSERT INTO students VALUES (?, ?, ?)
-# """, [
+#     """, [
 #     (101, "Jaskirat Singh", 1),
 #     (102, "Aman Singh", 1),
 #     (103, "Harsh Singh", 2),
