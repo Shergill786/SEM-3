@@ -1,16 +1,11 @@
-import sqlite3
+from pathlib import Path
 
-connection = sqlite3.connect("academics.db")
-cursor = connection.cursor()
+import pandas as pd
 
-cursor.execute("SELECT *FROM students")
-students = cursor.fetchall()
-cursor.execute("SELECT * from departments")
-departments = cursor.fetchall()
+DATA_FILE = Path(__file__).with_name("student.xlsx")
 
-for students in students:
-    print(students)
-for departments in departments:
-    print(departments)
-    
-    connection.close()
+
+if __name__ == "__main__":
+    data = pd.read_excel(DATA_FILE)
+    print("Database removed. Showing data from Excel file.")
+    print(data)

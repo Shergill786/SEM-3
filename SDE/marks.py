@@ -1,21 +1,11 @@
-import sqlite3
+from pathlib import Path
 
-conn = sqlite3.connect("tb_3G3")
-cursor = conn.cursor()
+import pandas as pd
+
+DATA_FILE = Path(__file__).with_name("3G3.csv")
 
 
-cursor.execute("""
-CREATE TABLE IF NOT EXISTS students (
-    studentid INTEGER PRIMARY KEY,
-    studentname TEXT NOT NULL,
-    deptid INTEGER,
-    FOREIGN KEY (deptid) REFERENCES departments(deptid)
-)
-""")
- 
-cursor.execute("""
-INSERT INTO students VALUES (?, ?, ?)
-""", [
-    (1, "Alice", 1),    
-
-])
+if __name__ == "__main__":
+    marks = pd.read_csv(DATA_FILE)
+    print("Database removed. Reading marks directly from CSV.")
+    print(marks.head())
