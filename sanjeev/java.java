@@ -154,4 +154,177 @@
 // v.retainAll(v1);
 // v.sort();
 // l.collections.reverseOrder();
-// 
+// v.toArray();
+// v.toString();
+
+
+// STACK
+// import java.util.Stack;
+// public class java {
+
+//     public static void main(String[] args) {
+//         Stack<String> s = new Stack<>();
+//         s.push("red");
+//         s.push("blue");
+//         s.push("green");
+//         s.push("yellow");
+
+// s.pop();
+// s.peek();
+// s.isEmpty();
+// s.empty();
+// s.search("red");
+
+//         System.out.println(s);
+//     }
+// }
+//
+
+// HASHSET
+// no douplicate 
+
+// import java.util.*;
+
+// import java.util.*;
+// hashset<integer> h = new HashSet<>();
+// h.add("red");
+// System.out.println(h);
+// h.remove("red");
+
+// h.clear();
+// h.contains("red");
+// h.clone();
+// h.isEmpty();
+
+// LINKEDHASHSET
+// import java.util.*;
+
+// LinkedHashSet<String> l = new LinkedHashSet<>();
+// l.add("red");
+// l.remove("red");
+// for (String i:l){
+//     System.out.println(i);
+
+// }
+// same as hashset but maintain insertion order
+
+// l.size();
+// l.clear();
+// l.equals(l1);
+// l.isEmpty();
+// l.toArray();
+// l.toString();
+
+// TREESET
+// import java.util.*;
+
+// TreeSet<String> t = new TreeSet<>();
+// t.add("red");
+// t.first();
+// t.last();
+// t.contains("red");
+// t.higer("red");
+// t.lower("red");
+// t.pollfirst();
+// t.polllast(); remove and return first and last element
+// t.remove("red");
+// for (String i:t){
+//     System.out.println(i);
+// }
+// same as hashset but maintain ascending order
+// t.tailset(10); greater then or equal to 10
+// t.subset(10,20); greater then or equal to 10 and less then 20
+// t.headset(10); less then 10
+// t.floor(10); less then or equal to 10
+// t.ceiling(10); greater then or equal to 10
+
+
+// priority queue
+// import java.util.*;
+// import java.util.PriorityQueue;
+// PriorityQueue<Integer> p = new PriorityQueue<>();
+// heap data structure
+
+// p.add(10);
+// p.peek();
+// p.poll();
+// System.out.println(p);
+// p.remove(10);
+// p.clear();
+// p.comparator();
+// p.contains(10);
+// p.isEmpty();
+// foreach (int i:p){
+//     System.out.println(i);
+// }
+// p.removeif(i->(i%2==0));
+// p.toarray();
+// p.offer(10);
+
+// abstract queues
+
+// import java.util.*;
+// import java.util.AbstractQueue;
+
+// AbstractQueue<Integer> a = new AbstractQueue<Integer>() {
+//     a.add(10);
+//     a.element();
+//     a.remove();
+//    
+// }
+
+// abstract collection
+
+// import java.util.*;
+// abstract collection<Integer> a = new abstract collection<Integer>() {
+//     a.add(10);
+//     a.clear();
+//     a.containsall(10);
+//     a.isEmpty();
+//     a.iterator();
+//     a.remove(10);
+//     a.size();
+//     a.toArray();
+//     a.toString();
+
+// };
+
+// linked list<> l =new LinkedList<>();
+// l.set(0,"hello");
+// l.remove(0);
+// for (String i:l){
+//     System.out.println(i);
+// }
+// l.add(1,"red");
+// l.addFirst("red");
+// l.addLast("red");
+// l.clear();
+// l.clone();
+// l.contains("red");
+// l.descendingIterator();
+// l.element();
+// l.getFirst();
+// l.getLast();
+// l.indexOf("red");
+// l.lastIndexOf("red");
+// l.firstIndexOf("red");
+// l.offerFirst("red");
+// l.offerLast("red"); tail and head
+// l.peek();
+// l.peekFirst();
+// l.peekLast();
+// l.pollFirst();
+// l.pollLast();
+// l.poll();
+// l.pop();
+// l.remove();
+// l.removeFirst();
+// l.removeLast();
+// l.removeFirstOccurrence("red");
+// l.removeLastOccurrence("red");
+// l.set(0,"hello");
+// l.size();
+// l.toArray();
+// l.toString();
+
+
