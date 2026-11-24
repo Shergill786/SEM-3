@@ -328,3 +328,95 @@
 // l.toString();
 
 
+// array double queue
+// import java.util.*;
+// ArrayDeque<String> a = new ArrayDeque<>(); 
+// a.add("red");
+// a.removefirst();
+// a.removeLast();
+// a.offerFirst("red");
+// a.offerLast("red");
+// a.getfirst();
+// a.getLast();
+// a.pop();
+// a.poll();
+// a.peek();
+// a.descendingIterator();
+// a.addfirst("red");
+// a.addLast("red");
+// a.clone();
+// aclear();
+// a.contains("red");
+// a.isEmpty();
+// a.iterator();
+// a.removeall("red");
+// a.size();
+// a.toArray();
+
+
+// HASHMAP
+
+// import java.util.*;
+// HashMap<String,String> h = new HashMap<>();
+
+// h.put(1,"red");
+// h.put(2,"blue");
+// h.put(3,"green");
+// for(Map.Entry<String,Interger>i:h.entrySet()){
+//     System.out.println(i.getKey()+" "+i.getValue());
+// }
+// System.out.println(h);
+
+// h.get(1);
+// h.put(1,"yellow");
+// h.remove(1);
+// h.clear();
+// h.clone();
+// h.compute("1",(key,val)->val.concat("yellow"));
+// h.containsKey(1);
+// h.containsValue("red");
+// h.compute("red",(key,val)->(val==null)?"10":val+1);
+// h.entrySet();
+// h.isEmpty();
+// h.keyset();
+// h.size();
+// h.values();
+
+// absract base classes
+// list ,map ,set ,queue ,collection
+
+
+
+// linkedHashmap<String,String> l = new LinkedHashMap<>();
+// it allows null key and multiple null values
+// l.put(1,"red");  
+// l.put(null,"blue");
+// l.put(2,null);
+// same 
+// l.getkey(1);
+// l.getvalue("red");
+
+// treeMap<String,String> t = new TreeMap<>();
+// it does not allow null key but multiple null values
+// import java.util.*;
+// TreeMap<String,Integer> t = new TreeMap<>(); 
+// t.put(1,"red");
+// System.out.println(t);
+
+// treeMap<String,Integer> t =new treeMap<>(new sort);
+// same 
+// t.firstKey();
+// t.lastKey();
+// t.tailMap(1); greater then or equal to 1
+// t.headMap(1); less then 1
+// t.subMap(1,2); greater then or equal to 1 and less then 2
+// t.lowerKey(1); less then 1
+// t.higherKey(1); greater then 1
+// t.floorKey(1); less then or equal to 1
+// t.ceilingKey(1); greater then or equal to 1
+// t.firstEntry();
+// t.lastEntry();
+// t.pollFirstEntry();
+// t.pollLastEntry();
+// t.descendingKeySet();    
+// t.descendingMap();
