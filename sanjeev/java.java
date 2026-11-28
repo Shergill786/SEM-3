@@ -420,3 +420,43 @@
 // t.pollLastEntry();
 // t.descendingKeySet();    
 // t.descendingMap();
+
+
+// HashTable
+// import java.util.*;
+// HashTable<String,String> h = new HashTable<>();
+
+// import java.util.*;
+// class student implements Comparable<student>{
+//     int rollno;
+//     String name;
+//     int marks;
+    
+//     student(int r1,String f1,int m1){
+//         this.marks=m1;
+//         this.rollno=r1;
+//         this.name=f1;
+//     }
+
+//     public int compareTo(student s){
+//         return this.rollno-s.rollno;
+
+//     }
+//     public String toString(){
+//         return rollno+" "+name+" "+marks;
+    
+//     }
+// }
+// class main{
+//     public static void main(String[] args) {
+//         ArrayList<student> l1 = new ArrayList<>();
+//         l1.add(new student(101,"ram",85));
+//         l1.add(new student(103,"shyam",42));
+//         l1.add(new student(102,"hari",70));
+        
+//         Collections.sort(l1);
+//         for(student s:l1){
+//             System.out.println(s);
+//         }
+//     }
+// }
